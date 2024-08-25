@@ -6,7 +6,8 @@ blue() { echo -e "\033[34m\033[01m[MESSAGE] $1\033[0m"; }
 light_magenta() { echo -e "\033[95m\033[01m[NOTICE] $1\033[0m"; }
 light_yellow() { echo -e "\033[93m\033[01m[NOTICE] $1\033[0m"; }
 
-backup() {
+backup() 
+{
     # 检查是否传入自定义路径
     local backup_path=${1:-/tmp/upload}
     mkdir -p "$backup_path"
